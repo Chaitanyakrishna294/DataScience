@@ -1,5 +1,5 @@
 
-#Day 1: Data Science - Basics of Classification 🚀
+# Day 1: Data Science - Basics of Classification 
 
 For Day 1, I focused on understanding the fundamentals of Classification in Machine Learning. I go through all scikit-learn library to build a simple "Gender Predictor" based on physical attributes (Height, Weight, Shoe Size).
 
@@ -56,15 +56,15 @@ Understood the .fit() method for training and .predict() for prediction.
 Observed that different models might gives different results depending on the data complexity.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-# Day 2: Linear Regression - Predicting Numbers 📉
+# Day 2: Linear Regression 
 
-For **Day 2**, I moved from Classification to **Regression**. 
-While Classification categorizes data (A vs B), Regression predicts continuous values (like prices, temperature, or scores).
+For **Day 2**, I moves from Classification to **Regression**. 
+While in classification categorizes data (A vs B), but in Regression predicts continuous values (like prices, temperature, or scores).
 
-## 📋 Project: Score Predictor
-I built a simple AI that predicts a student's test score based on the number of hours they studied.
+📋 Project: Score Predictor
+I built a simple Logic that predicts a student's test score based on the number of hours they studied.
 
-## 🧠 The Math: Linear Regression
+🧠 The Math Behind Linear Regression
 The model tries to fit a straight line through the data points using the equation:
 $$y = mx + c$$
 * **y**: The Score (Target)
@@ -72,12 +72,12 @@ $$y = mx + c$$
 * **m**: The Slope (How much the score goes up per hour)
 * **c**: The Intercept (The score if you study 0 hours)
 
-## 🛠️ Libraries Used
+🛠️ Libraries Used
 * **Scikit-Learn:** For the `LinearRegression` model.
 * **NumPy:** To handle the array shapes.
 * **Matplotlib:** To visualize the "Line of Best Fit."
 
-## 📊 Visuals
+📊 Visuals
 The code generates a graph showing the actual student scores (Blue Dots) and the machine's learned pattern (Red Line).
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
