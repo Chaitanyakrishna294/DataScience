@@ -55,6 +55,32 @@ Learned how to import specific models from sklearn.
 Understood the .fit() method for training and .predict() for prediction.
 Observed that different models might gives different results depending on the data complexity.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+# Day 2: Linear Regression - Predicting Numbers 📉
+
+For **Day 2**, I moved from Classification to **Regression**. 
+While Classification categorizes data (A vs B), Regression predicts continuous values (like prices, temperature, or scores).
+
+## 📋 Project: Score Predictor
+I built a simple AI that predicts a student's test score based on the number of hours they studied.
+
+## 🧠 The Math: Linear Regression
+The model tries to fit a straight line through the data points using the equation:
+$$y = mx + c$$
+* **y**: The Score (Target)
+* **x**: The Hours Studied (Feature)
+* **m**: The Slope (How much the score goes up per hour)
+* **c**: The Intercept (The score if you study 0 hours)
+
+## 🛠️ Libraries Used
+* **Scikit-Learn:** For the `LinearRegression` model.
+* **NumPy:** To handle the array shapes.
+* **Matplotlib:** To visualize the "Line of Best Fit."
+
+## 📊 Visuals
+The code generates a graph showing the actual student scores (Blue Dots) and the machine's learned pattern (Red Line).
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 A huge thank you to **Siraj Raval** for the inspiration and guidance to start this journey.
 * **GitHub:** [@llSourcell](https://github.com/llSourcell)
 * **YouTube:** [Siraj Raval](https://youtu.be/T5pRlIbr6gg?si=O2xE08iO7yRP6U3c)
