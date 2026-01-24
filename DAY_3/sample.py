@@ -17,7 +17,7 @@ y_prob=model.predict_proba(X_test)[:,1]
 plt.scatter(X,y,color='cyan',label='Data Points')
 plt.plot(X_test,y_prob,color='red',label='Logestic Regression')
 plt.title("Probability of Buying Insurence Vs Age")
-plt.xlabel=('Age of Customers')
+plt.xlabel=('Age')
 plt.ylabel=('probability(0=No,1=Yes)')
 plt.legend()
 plt.show()
