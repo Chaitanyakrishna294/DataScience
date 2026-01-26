@@ -106,6 +106,62 @@ The red line in the graph represents the **Probability**.
 * Top of the S: High probability (Older people).
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+# Day 4: K-Nearest Neighbors (KNN)
+For Day 4, I explored K-Nearest Neighbors (KNN). Unlike other models that "learn" a complex math formula, KNN is a "Lazy Learner"—it simply memorizes the entire dataset. When we ask for a prediction, it looks for the 'K' most similar data points (neighbors) and takes a vote.
+
+📋 Project: Interactive T-Shirt Size Predictor
+I built a CLI (Command Line Interface) tool that predicts whether a user needs a Small or Large T-shirt.
+
+The program asks the user for their Height and Weight.
+
+It compares the user to a dataset of 18 existing customers.
+
+It predicts the size and plots the user as a Star on the graph.
+
+🧠 Key Concept: Euclidean Distance
+KNN calculates the straight-line distance between the new point and every other point to find the closest matches.
+Small K (e.g., 1): Highly sensitive to noise.
+Large K (e.g., 5): More stable, but might miss local details.
+I used K=3 for this project.
+
+🛠️ Libraries Used
+Scikit-Learn: KNeighborsClassifier for the algorithm.
+Matplotlib: To visualize the "Cluster" of Small vs. Large customers.
+NumPy: For handling the data arrays.
+
+📊 Visuals
+
+🔵 Blue Dots: Small Size
+
+🔴 Red Dots: Large Size
+
+⭐ Yellow/Star: Entered value
+
+📝 Learning Outcomes
+Interactive Input: Learned to use input() and float() to make the model dynamic.
+Visualization: Learned to plot a specific user marker (marker='*') on top of existing training data to visually confirm the model's decision.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+# Day 5: Random Forest 
+
+For **Day 5**, I learned **Random Forest**, an "Ensemble" method.
+Instead of relying on a single Decision Tree (which can be biased), Random Forest creates hundreds of trees and makes them vote on the final answer.
+
+## 📋 Project: HR Hiring Predictor
+I built an AI that mimics a Hiring Manager.
+* **Input:** Experience, Test Score, Interview Score.
+* **Output:** Hired vs. Rejected.
+
+## 🧠 Key Concept: Feature Importance
+One of the best features of Random Forest is that it is "interpretable." It can calculate exactly which input feature had the biggest impact on the decision. 
+* *Example:* The model might reveal that "Interview Score" is 3x more important than "Years of Experience."
+
+## 🛠️ Libraries Used
+* **Scikit-Learn:** `RandomForestClassifier`
+* **Matplotlib:** To visualize the "Importance Bar Chart."
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 A huge thank you to **Siraj Raval** for the inspiration and guidance to start this journey.
 * **GitHub:** [@llSourcell](https://github.com/llSourcell)
 * **YouTube:** [Siraj Raval](https://youtu.be/T5pRlIbr6gg?si=O2xE08iO7yRP6U3c)
