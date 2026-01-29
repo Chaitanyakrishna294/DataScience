@@ -34,4 +34,5 @@ feature_names = ['Experience', 'Written Test', 'Interview Score']
 plt.bar(feature_names, importances, color=['blue', 'green', 'orange'])
 plt.title("What Matters Most for Getting Hired?")
 plt.ylabel("Importance Score (0-1)")
+plt.savefig("example.png")
 plt.show()
