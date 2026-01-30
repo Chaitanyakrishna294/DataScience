@@ -32,7 +32,7 @@ My goal was to compare how different classification algorithms handle the same s
 
 ---
 
-## # Day 2: Linear Regression 📈
+## # Day 2: Linear Regression - The Slope
 
 For **Day 2**, I moved from Classification to **Regression**. While classification categorizes data (A vs B), Regression predicts continuous values (like prices, temperature, or scores).
 
@@ -52,7 +52,7 @@ The code generates a graph showing the actual student scores (Blue Dots) and the
 
 ---
 
-## # Day 3: Logistic Regression - The "S" Curve 🧬
+## # Day 3: Logistic Regression - The "S" Curve 
 
 For **Day 3**, I learned **Logistic Regression**. Despite the name "Regression," this is actually a **Classification** algorithm used to predict binary outcomes (Yes/No, True/False, 0/1).
 
@@ -72,7 +72,7 @@ The red line in the graph represents the **Probability**.
 
 ---
 
-## # Day 4: K-Nearest Neighbors (KNN) 👕
+## # Day 4: K-Nearest Neighbors (KNN) - Based on your Surroundings
 
 For **Day 4**, I explored **KNN**. Unlike other models that "learn" a complex math formula, KNN is a "Lazy Learner"—it simply memorizes the entire dataset. When we ask for a prediction, it looks for the 'K' most similar data points (neighbors) and takes a vote.
 
@@ -95,7 +95,7 @@ KNN calculates the straight-line distance between the new point and every other 
 
 ---
 
-## # Day 5: Random Forest 🌲
+## # Day 5: Random Forest 
 
 For **Day 5**, I learned **Random Forest**, an "Ensemble" method. Instead of relying on a single Decision Tree (which can be biased), Random Forest creates hundreds of trees and makes them vote on the final answer.
 
@@ -110,7 +110,7 @@ One of the best features of Random Forest is that it is "interpretable." It can 
 
 ---
 
-## # Day 6: SVM (Support Vector Machine) - Breast Cancer Prediction 🩺
+## # Day 6: SVM (Support Vector Machine) - Breast Cancer Prediction 
 
 For **Day 6**, I tackled a high-stakes classification problem: Breast Cancer Detection.
 
@@ -131,7 +131,7 @@ The system looks at patient details like age, tumor size, and medical history to
 
 ---
 
-## # Day 7: K-Means Clustering - Unsupervised Learning 🛍️
+## # Day 7: K-Means Clustering - Unsupervised Learning 
 
 For **Day 7**, I shifted from Supervised Learning to **Unsupervised Learning**. I used the **K-Means Clustering** algorithm to find hidden patterns in raw data without any labels or guidance.
 
@@ -152,7 +152,7 @@ Imagine a party where strangers naturally separate into groups (Dancers, Busines
 
 ---
 
-## # Day 8: XGBoost - The Ferrari of Machine Learning 🏎️
+## # Day 8: XGBoost - The Ferrari of Machine Learning 
 
 For **Day 8**, I mastered **XGBoost (Extreme Gradient Boosting)**, the algorithm that dominates Kaggle competitions. I moved from "Bagging" (Random Forest) to "Boosting" (Sequential Learning).
 
