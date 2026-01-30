@@ -175,4 +175,39 @@ This **Gradient Boosting** approach achieves higher accuracy than standard trees
 
 ### 🛠️ Tech Stack
 * **Library:** `xgboost`
-*
+
+---
+
+# Day 9: LightGBM - The Tesla of Machine Learning ⚡
+
+For **Day 9**, I mastered **LightGBM (Light Gradient Boosting Machine)**, developed by Microsoft.
+While XGBoost is powerful (the "Ferrari"), LightGBM is designed for the Big Data era. It is **10x faster**, consumes less memory, and handles categorical data automatically.
+
+## 📋 Project: Airline Passenger Satisfaction ✈️
+I built an AI model to analyze passenger feedback and predict customer satisfaction.
+* **Dataset:** 100,000+ real passenger records (Kaggle).
+* **Goal:** Predict `Satisfaction` (1 = Satisfied, 0 = Dissatisfied/Neutral).
+* **Challenge:** Processing massive data with mixed text and numbers instantly.
+
+## 🧠 Key Concept: Leaf-Wise Growth 🌿
+Unlike XGBoost, which grows trees level-by-level (horizontally), LightGBM grows **Leaf-Wise** (vertically).
+* It finds the most promising branch and digs deep immediately.
+* **Result:** Faster training and higher accuracy on large datasets.
+* **Native Handling:** LightGBM can read text categories (like "Business Class") directly without needing One-Hot Encoding.
+
+## 🛠️ The Tech Stack
+* **Library:** `lightgbm` (Native API).
+* **Data Structure:** `lgb.Dataset` (Binary optimized format).
+* **Configuration:** Used a `params` dictionary for granular control.
+
+## ⚙️ The "Cockpit" Configuration
+Instead of default settings, I tuned the model manually:
+```python
+params = {
+    'objective': 'binary',        # Predicting Yes/No
+    'metric': 'binary_logloss',   # Confidence scoring
+    'boosting_type': 'gbdt',      # Standard Gradient Boosting
+    'num_leaves': 31,             # Complexity control
+    'learning_rate': 0.05,        # Slow & Steady learning
+    'feature_fraction': 0.9       # Prevent overfitting
+}
