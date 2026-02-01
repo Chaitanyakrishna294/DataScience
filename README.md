@@ -215,7 +215,7 @@ params = {
 ---
 
 
-# 🌍 Air Quality Index (AQI) Predictor
+# DAY-10 : 🌍 Air Quality Index (AQI) Predictor
 
 An End-to-End Machine Learning project that predicts the **Air Quality Index (AQI)** based on pollutant levels and city data.
 This project moves beyond simple analysis by deploying the model as a live **FastAPI** backend, ready for integration into web or mobile apps.
