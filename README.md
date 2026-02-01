@@ -211,3 +211,91 @@ params = {
     'learning_rate': 0.05,        # Slow & Steady learning
     'feature_fraction': 0.9       # Prevent overfitting
 }
+```
+---
+
+
+# 🌍 Air Quality Index (AQI) Predictor
+
+An End-to-End Machine Learning project that predicts the **Air Quality Index (AQI)** based on pollutant levels and city data.
+This project moves beyond simple analysis by deploying the model as a live **FastAPI** backend, ready for integration into web or mobile apps.
+
+## 🚀 Key Features
+* **Machine Learning:** Uses **Random Forest Regressor** to predict continuous AQI values.
+* **Optimization:** Implements **GridSearchCV** to find the perfect hyperparameters automatically.
+* **City-Aware:** Uses **Label Encoding** to adjust predictions based on the specific city (e.g., Delhi vs. Bangalore).
+* **Visualization:** Automatically generates charts for Feature Importance and Prediction Error.
+* **Deployment:** A professional **FastAPI** server that classifies health risk (Good 🟢 to Severe ☠️).
+
+## 🛠️ Tech Stack
+* **Language:** Python 3.x
+* **ML Library:** Scikit-Learn (Random Forest, GridSearch)
+* **Data Processing:** Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn
+* **API Framework:** FastAPI, Uvicorn
+* **Serialization:** Joblib (for saving/loading models)
+
+## 📂 Project Structure
+```text
+├── city_day.csv            # The Dataset (Kaggle)
+├── train_model.py          # Script to Train, Tune, and Save the Model
+├── main.py                 # FastAPI Server script
+├── aqi_model.pkl           # Saved Model + Encoder (Generated after training)
+├── requirements.txt        # Dependencies
+└── README.md               # Documentation
+```
+⚙️ Installation
+Clone the repository (or download files).
+Install dependencies:
+Bash
+pip install pandas numpy scikit-learn matplotlib seaborn joblib fastapi uvicorn
+Get the Data: Ensure you have the city_day.csv file in the folder.
+Source: Kaggle: Air Quality Data in India
+
+🧠 Phase 1: Training the Model
+Run the training script to process data, tune the model, and generate visualizations.
+Bash
+python train_model.py
+What happens?
+Cleans missing values using Median Imputation.
+Encodes City names into numbers.
+Runs GridSearchCV to find the best n_estimators and max_depth.
+Saves three plots: pollutant_effect.png, Actual_vs_Predicted.png, Truth_Vs_Predict.png.
+Saves the final artifact: aqi_model.pkl.
+
+🌐 Phase 2: Running the API
+Once aqi_model.pkl is created, launch the server:
+
+Bash
+python -m uvicorn main:app --reload
+Server URL: http://127.0.0.1:8000
+Interactive Docs: http://127.0.0.1:8000/docs
+🧪 How to Test (API usage)
+Go to http://127.0.0.1:8000/docs
+Click POST /predict_aqi → Try it out.
+Paste this JSON:
+```
+JSON
+{
+  "pm25": 180.0,
+  "pm10": 250.0,
+  "no2": 60.0,
+  "co": 1.5,
+  "so2": 10.0,
+  "o3": 45.0,
+  "city": "Delhi"
+}
+```
+Response:
+```
+JSON
+{
+  "City": "Delhi",
+  "Predicted_AQI": 312,
+  "Status": "Very Poor 🔴"
+}
+```
+📊 Model Performance
+Baseline Accuracy: ~88% (R2 Score)
+Tuned Accuracy: ~91% (after GridSearchCV)
+Key Insight: PM2.5 and PM10 were identified as the most critical drivers of AQI.
