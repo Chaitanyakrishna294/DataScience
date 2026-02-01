@@ -51,7 +51,6 @@ grid_search=GridSearchCV(
     scoring='r2',
     n_jobs=-1
 )
-
 grid_search.fit(x_train,y_train)
 
 print(f"Best Hyperparameters: {grid_search.best_params_}")
