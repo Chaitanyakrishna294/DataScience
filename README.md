@@ -299,3 +299,35 @@ JSON
 Baseline Accuracy: ~88% (R2 Score)
 Tuned Accuracy: ~91% (after GridSearchCV)
 Key Insight: PM2.5 and PM10 were identified as the most critical drivers of AQI.
+
+---
+
+# 🛍️ Customer Personality Segmentation
+
+A Machine Learning project that uses **Unsupervised Learning (K-Means Clustering)** to identify distinct customer groups based on their purchasing behavior.
+
+## 🎯 Project Goal
+To analyze a dataset of mall customers and group them into specific "Tribes" (Clusters) based on two key factors:
+1.  **Annual Income (k$)**
+2.  **Spending Score (1-100)**
+
+This helps marketing teams understand who their customers are (e.g., "VIPs" vs. "Savers") to create targeted strategies.
+
+## 🧠 The Approach
+Since we do not have labels (no "correct answer"), we use **Unsupervised Learning**:
+1.  **Elbow Method:** To scientifically determine the optimal number of groups (Clusters).
+2.  **K-Means Clustering:** To group the data points.
+3.  **Centroid Analysis:** To interpret what each group represents.
+
+## 🛠️ Tech Stack
+* **Language:** Python 3.x
+* **Algorithm:** K-Means Clustering (Scikit-Learn)
+* **Data Processing:** Pandas, NumPy
+* **Preprocessing:** StandardScaler (Feature Scaling)
+* **Visualization:** Matplotlib, Seaborn
+
+## 📂 Project Structure
+```text
+├── Mall_Customers.csv      # The Dataset (Required)
+├── sample.py     # Main script (Elbow Method + Training + Plotting)
+└── README.md               # Documentation
