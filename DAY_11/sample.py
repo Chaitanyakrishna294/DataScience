@@ -21,6 +21,7 @@ X=df[['income','score']]
 scaler=StandardScaler()
 X_scaled=scaler.fit_transform(X)
 
+#WCSS -(Within Cluster Sum of Sqaures)
 wcss=[]
 for i in range(1,11):
     model=KMeans(n_clusters=i,init='k-means++',random_state=42,n_init=10)
